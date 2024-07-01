@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARG Game</title>
+</head>
+<body>
+    <h1>Game</h1>
+    <p>{{ content }}</p>
+    <form action="" method="post">
+        <p>{{ question }}</p>
+        <input type="text" name="answer" required>
+        <button type="submit">Submit Answer</button>
+    </form>
+    <form action="/hint/user1" method="get">
+        <button type="submit">Get Hint</button>
+    </form>
+    {% if error %}
+    <p style="color: red;">Incorrect answer, try again.</p>
+    {% endif %}
+</body>
+</html>
