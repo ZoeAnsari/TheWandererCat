@@ -12,3 +12,9 @@
 ## the structure of the config.ini file should look similar to:
 ## [telegram]
 ## bot_token = <BOT_TOKEN>
+
+## to deploy for free install heroku: https://devcenter.heroku.com/articles/heroku-cli
+## brew tap heroku/brew && brew install heroku
+## curl https://cli-assets.heroku.com/install.sh | sh
+## heroku --version
+# heroku login
